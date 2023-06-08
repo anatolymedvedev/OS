@@ -62,7 +62,7 @@ int main()
     pthread_create(&user, NULL, consume, NULL);
 
     pthread_join(provider, NULL);
-    //следующий join можно убрать, т.к не достигнем его, потому что поток бесконечный
+    
     pthread_join(user, NULL);
     return 0;
 }
